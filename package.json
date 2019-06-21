@@ -1,0 +1,33 @@
+{
+  "name": "cordova-plugin-network-printer",
+  "version": "1.0.0",
+  "description": "Ethernet Network Printer",
+  "cordova": {
+    "id": "cordova-plugin-network-printer",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SawMaineK/NetworkPrinter.git"
+  },
+  "keywords": [
+    "android",
+    "wifi printer",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Saw Maine K",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/SawMaineK/NetworkPrinter/issues"
+  },
+  "homepage": "https://github.com/SawMaineK/NetworkPrinter#readme"
+}
