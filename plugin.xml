@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="com.smk.networkprinter" version="1.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="com.smk.networkprinter" version="1.0.3" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>Network Printer</name>
 
     <description>Ethernet Network Printer</description>
@@ -28,15 +28,15 @@
             <activity android:name="com.smk.networkprinter.invoice.InvoiceActivity" />
         </config-file>
 
-        <source-file src="src/android/Printer.java" target-dir="src/com/networkprinter" />
-        <source-file src="src/android/PrinterService.java" target-dir="src/com/networkprinter" />
-        <source-file src="src/android/PrinterManager.java" target-dir="src/com/networkprinter" />
-        <source-file src="src/android/Commands.java" target-dir="src/com/networkprinter" />
-        <source-file src="src/android/image/Image.java" target-dir="src/com/networkprinter/image" />
-        <source-file src="src/android/invoice/Invoice.java" target-dir="src/com/networkprinter/invoice" />
-        <source-file src="src/android/invoice/InvoiceActivity.java" target-dir="src/com/networkprinter/invoice" />
-        <source-file src="src/android/invoice/Item.java" target-dir="src/com/networkprinter/invoice" />
-        <source-file src="src/android/invoice/ListItemAdapter.java" target-dir="src/com/networkprinter/invoice" />
+        <source-file src="src/android/Printer.java" target-dir="src/com/smk/networkprinter" />
+        <source-file src="src/android/PrinterService.java" target-dir="src/com/smk/networkprinter" />
+        <source-file src="src/android/PrinterManager.java" target-dir="src/com/smk/networkprinter" />
+        <source-file src="src/android/Commands.java" target-dir="src/com/smk/networkprinter" />
+        <source-file src="src/android/image/Image.java" target-dir="src/com/smk/networkprinter/image" />
+        <source-file src="src/android/invoice/Invoice.java" target-dir="src/com/smk/networkprinter/invoice" />
+        <source-file src="src/android/invoice/InvoiceActivity.java" target-dir="src/com/smk/networkprinter/invoice" />
+        <source-file src="src/android/invoice/Item.java" target-dir="src/com/smk/networkprinter/invoice" />
+        <source-file src="src/android/invoice/ListItemAdapter.java" target-dir="src/com/smk/networkprinter/invoice" />
         <source-file src="src/android/xml/activity_invoice.xml" target-dir="res/layout" />
         <source-file src="src/android/xml/list_item_invoice.xml" target-dir="res/layout" />
         <source-file src="src/android/xml/dotted.xml" target-dir="res/drawable" />

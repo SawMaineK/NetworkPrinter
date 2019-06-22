@@ -1,10 +1,10 @@
 package com.smk.networkprinter.invoice;
 
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.os.StrictMode;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,9 +19,8 @@ import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
-import java.util.zip.Inflater;
 
-public class InvoiceActivity extends AppCompatActivity {
+public class InvoiceActivity extends Activity {
 
     private ListView lstView;
     private ArrayList<Object> itemList;
