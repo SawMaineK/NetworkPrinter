@@ -8,12 +8,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import com.google.gson.Gson;
 import com.smk.networkprinter.PrinterManager;
 import com.smk.networkprinter.PrinterService;
 import com.smk.networkprinter.R;
+import com.squareup.picasso.Callback;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.zip.Inflater;
@@ -29,6 +32,7 @@ public class InvoiceActivity extends AppCompatActivity {
     private Invoice invoice;
     private PrinterManager printer;
     private PrinterService printerService;
+    private ImageView imgLogo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +57,38 @@ public class InvoiceActivity extends AppCompatActivity {
         printing.setMessage("Printing...");
         printing.show();
         if(invoice != null) {
+            imgLogo = (ImageView) findViewById(R.id.img_logo);
+            Picasso.get()
+                    .load("https://www.onhandpos.com/assets/imgs/logo.png")
+                    .resize(300, 150)
+                    .centerInside()
+                    .into(imgLogo, new Callback() {
+                        @Override
+                        public void onSuccess() {
+                            new Thread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    try {
+                                        Thread.sleep(300);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    } finally {
+                                        Bitmap bitmap = loadBitmapFromView(findViewById(R.id.invoice));
+                                        printerService.printImage(resizeBitmap(bitmap, paperWidth));
+                                        printerService.lineBreak();
+                                        printerService.cutFull();
+                                        printing.dismiss();
+                                        finish();
+                                    }
+                                }
+                            }).start();
+                        }
+
+                        @Override
+                        public void onError(Exception e) {
+
+                        }
+                    });
             lstView = (ListView) findViewById(R.id.lst_item);
             itemList = new ArrayList<>();
             itemList.addAll(this.invoice.getItems());
@@ -61,24 +97,7 @@ public class InvoiceActivity extends AppCompatActivity {
             lstView.setAdapter(mAdapter);
             mAdapter.notifyDataSetChanged();
             setListViewHeightBasedOnItems(lstView);
-            new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    try {
-                        Thread.sleep(300);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    } finally {
-                        Bitmap bitmap = loadBitmapFromView(findViewById(R.id.invoice));
 
-                        printerService.printImage(resizeBitmap(bitmap, paperWidth));
-                        printerService.lineBreak();
-                        printerService.cutFull();
-                        printing.dismiss();
-                        finish();
-                    }
-                }
-            }).start();
         }
 
 
