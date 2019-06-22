@@ -55,7 +55,7 @@
                     android:text="Company Address: No.39 B, Sapal Street, Mingal Taungnyunt" />
 
                 <TextView
-                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="+959 777 555 336, 09767 947 154" />
@@ -76,17 +76,17 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
                         <TextView
-                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="10/09/2019 01:23 PM" />
                         <TextView
-                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Cashier: Saw K" />
                         <TextView
-                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Currency: MMK" />
@@ -98,17 +98,17 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
                         <TextView
-                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="INV. 1000001" />
                         <TextView
-                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="CUST: Saw Maine K" />
                         <TextView
-                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Ph: 09777335336" />
@@ -181,32 +181,32 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
                         <TextView
-                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Subtotal:" />
                         <TextView
-                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Discount:" />
                         <TextView
-                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Tax:" />
                         <TextView
-                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Grand Total:" />
                         <TextView
-                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Paid Total:" />
                         <TextView
-                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Change Amount:" />
@@ -218,32 +218,32 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
                         <TextView
-                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="20,000" />
                         <TextView
-                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="20,000" />
                         <TextView
-                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="1,000" />
                         <TextView
-                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="3,000" />
                         <TextView
-                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="19,000" />
                         <TextView
-                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="1,000" />
