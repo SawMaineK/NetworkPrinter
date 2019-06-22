@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="com.smk.networkprinter" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="com.smk.networkprinter" version="1.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>Network Printer</name>
 
     <description>Ethernet Network Printer</description>
@@ -22,6 +22,7 @@
         </config-file>
 
         <framework src="com.google.code.gson:gson:2.8.5" />
+        <framework src="com.squareup.picasso:picasso:2.71828" />
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <activity android:name="com.smk.networkprinter.invoice.InvoiceActivity" />
