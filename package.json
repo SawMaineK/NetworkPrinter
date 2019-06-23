@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-network-printer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Ethernet Network Printer",
   "cordova": {
     "id": "cordova-plugin-network-printer",
